@@ -4,7 +4,7 @@ Comparison among several scRNA-Seq clustering algorithms under two datasets:
 
 ### PBMC dataset
 
-Dataset was downloaded from [1], containing 10 bead-enriched subpopulations of peripheral blood mononuclear cells (PBMC) from a fresh donor (Donor A). The 19,630 genes used are expressed in at least 3 cells.
+Dataset was downloaded from [1], containing subpopulations of peripheral blood mononuclear cells (PBMC) from a fresh donor (Donor A). The 19,630 genes used are expressed in at least 3 cells.
 
 The following methods were compared:
 
