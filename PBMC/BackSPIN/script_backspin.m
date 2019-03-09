@@ -1,5 +1,5 @@
 %% load data
-load A_samples y
+load A_samples
 
 %% run backspin
 output = 'output.txt';
