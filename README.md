@@ -1,5 +1,4 @@
 # Machine Learning and Statistical Methods for Clustering Single Cell RNA-sequencing Data
--
 
 Comparison among several scRNA-Seq clustering algorithms under two datasets:
 
