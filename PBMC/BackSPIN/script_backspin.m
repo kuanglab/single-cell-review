@@ -4,7 +4,7 @@ load A_samples y
 %% run backspin
 output = 'output.txt';
 tic
-system(['mypath/backspin -i data_backspin/A.cef -o ', output, ' -f 5000 -d 4 -v']);
+system(['mypath/backspin -i data_backspin/A_100.cef -o ', output, ' -f 5000 -d 4 -v']);
 toc
 
 %% filter clustering results
@@ -20,4 +20,4 @@ c = table2array(res(end,8:end));
 c = c(idx);
 
 %% ARI
-disp(['ARI=',num2str(rand_index(c, y, 'adjusted'))]);
+disp(['ARI=',num2str(rand_index(c, y_100, 'adjusted'))]);
