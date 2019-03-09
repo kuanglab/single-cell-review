@@ -4,7 +4,7 @@ Comparison among several scRNA-Seq clustering algorithms under two datasets:
 
 ### PBMC dataset
 
-Dataset was downloaded from [1], containing subpopulations of peripheral blood mononuclear cells (PBMC) from a fresh donor (Donor A). The 19,630 genes used are expressed in at least 3 cells.
+Dataset was downloaded from [1], containing 10 bead-enriched subpopulations of peripheral blood mononuclear cells (PBMC) from a fresh donor (Donor A). The 19,630 genes used are expressed in at least 3 cells.
 
 The following methods were compared:
 
@@ -30,6 +30,12 @@ Dataset was downloaded from [12], containing 515 cells of 11 patients with breas
 
 The following methods were compared:
 
+- Separated k-Means
+- Pooled k-Means
+- Separated cellTree [3]
+- Pooled cellTree [3]
+- Separated SC3 [8]
+- Pooled SC3 [8]
 - Seurat 2.0 [13]
 - scVDMC [14]
 
