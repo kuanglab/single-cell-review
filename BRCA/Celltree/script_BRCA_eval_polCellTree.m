@@ -1,6 +1,6 @@
 %% load data
-load('A_BRCA_filtered_5000.mat', 'A2')
-load('A_BRCA_filtered_5000.mat', 'y3')
+load('../A_BRCA_filtered_5000.mat', 'A2')
+load('../A_BRCA_filtered_5000.mat', 'y3')
 
 %% combine labels
 A = [];
