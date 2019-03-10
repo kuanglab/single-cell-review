@@ -1,6 +1,6 @@
 %% load data
-load('A_BRCA_filtered_5000.mat', 'A2', 'y23')
-load('A_BRCA_filtered_5000.mat', 'y23')
+load('../A_BRCA_filtered_5000.mat', 'A2', 'y23')
+load('../A_BRCA_filtered_5000.mat', 'y23')
 
 %% separated kmeans
 res = {};
