@@ -1,5 +1,5 @@
 %% load data
-load('A_BRCA_filtered_5000.mat', 'y23')
+load('../A_BRCA_filtered_5000.mat', 'y23')
 
 %% load results
 a = readtable('seurat_output_BRCA.csv');
