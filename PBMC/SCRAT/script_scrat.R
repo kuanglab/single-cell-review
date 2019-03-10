@@ -1,6 +1,6 @@
 library(scrat)
 
-data <- read.table("data_cidr/A_100.txt")
+data <- read.table("data_scrat/A_100.txt")
 
 start_time <- Sys.time()
 
