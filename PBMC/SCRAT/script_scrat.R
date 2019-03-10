@@ -4,7 +4,7 @@ data <- read.table("data_cidr/A_100.txt")
 
 start_time <- Sys.time()
 
-env <- scrat.new(list(dataset.name="Scrat 100 30 x 30 dmap", dim.1stLvlSom = 30, count.processing = TRUE, pseudotime.estimation=NULL, standard.spot.modules="dmap"))
+env <- scrat.new(list(dataset.name="Scrat 100 30 x 30 dmap", dim.1stLvlSom = 30, count.processing = TRUE, pseudotime.estimation=NULL))
 env$indata <- data
 
 set.seed(i)
