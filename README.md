@@ -14,11 +14,12 @@ The following methods were compared:
 - CIDR [4]
 - DendroSplit [5]
 - ICGS [6]
-- pcaReduce [7]
-- SC3 [8]
-- SCRAT [9]
-- Seurat 1.0 [10]
-- SNN-Cliq [11]
+- Monocle [7]
+- pcaReduce [8]
+- SC3 [9]
+- SCRAT [10]
+- Seurat 1.0 [11]
+- SNN-Cliq [12]
 
 Source code can be found at the `PBMC` folder, and it assumes you have each method installed the machine. Source code was implemented in MATLAB 2018a.
 
@@ -26,7 +27,7 @@ Dataset processed for each method can be download at:
 
 ### Breast cancer dataset
 
-Dataset was downloaded from [12], containing 515 cells of 11 patients with breast cancer. We extracted the top 5,000 differentially expressed genes. Cells are in three groups: Immune, Stromal or Tumor. We used 5 patients that contain cells of the three groups, with 212 cells in total.
+Dataset was downloaded from [13], containing 515 cells of 11 patients with breast cancer. We extracted the top 5,000 differentially expressed genes. Cells are in three groups: Immune, Stromal or Tumor. We used 5 patients that contain cells of the three groups, with 212 cells in total.
 
 The following methods were compared:
 
@@ -34,10 +35,12 @@ The following methods were compared:
 - Pooled k-Means
 - Separated cellTree [3]
 - Pooled cellTree [3]
-- Separated SC3 [8]
-- Pooled SC3 [8]
-- Seurat 2.0 [13]
-- scVDMC [14]
+- Separated SC3 [9]
+- Pooled SC3 [9]
+- Separated Monocle [7]
+- Pooled Monocle [7]
+- Seurat 2.0 [14]
+- scVDMC [15]
 
 Source code can be found at the `BRCA` folder, and it assumes you have each method installed the machine. Source code was implemented in MATLAB 2018a.
 
@@ -57,18 +60,20 @@ Dataset processed for each method can be download at:
 
 [6] Olsson, Andre, Meenakshi Venkatasubramanian, Viren K. Chaudhri, Bruce J. Aronow, Nathan Salomonis, Harinder Singh, and H. Leighton Grimes. "Single-cell analysis of mixed-lineage states leading to a binary cell fate choice." Nature 537, no. 7622 (2016): 698.
 
-[7] Yau, Christopher. "pcaReduce: hierarchical clustering of single cell transcriptional profiles." BMC bioinformatics 17, no. 1 (2016): 140.
+[7] Qiu, Xiaojie, Qi Mao, Ying Tang, Li Wang, Raghav Chawla, Hannah A. Pliner, and Cole Trapnell. "Reversed graph embedding resolves complex single-cell trajectories." Nature methods 14, no. 10 (2017): 979.
 
-[8] Kiselev, Vladimir Yu, Kristina Kirschner, Michael T. Schaub, Tallulah Andrews, Andrew Yiu, Tamir Chandra, Kedar N. Natarajan et al. "SC3: consensus clustering of single-cell RNA-seq data." Nature methods 14, no. 5 (2017): 483.
+[8] Yau, Christopher. "pcaReduce: hierarchical clustering of single cell transcriptional profiles." BMC bioinformatics 17, no. 1 (2016): 140.
 
-[9] Camp, J. Gray, Keisuke Sekine, Tobias Gerber, Henry Loeffler-Wirth, Hans Binder, Malgorzata Gac, Sabina Kanton et al. "Multilineage communication regulates human liver bud development from pluripotency." Nature 546, no. 7659 (2017): 533.
+[9] Kiselev, Vladimir Yu, Kristina Kirschner, Michael T. Schaub, Tallulah Andrews, Andrew Yiu, Tamir Chandra, Kedar N. Natarajan et al. "SC3: consensus clustering of single-cell RNA-seq data." Nature methods 14, no. 5 (2017): 483.
 
-[10] Satija, Rahul, Jeffrey A. Farrell, David Gennert, Alexander F. Schier, and Aviv Regev. "Spatial reconstruction of single-cell gene expression data." Nature biotechnology 33, no. 5 (2015): 495.
+[10] Camp, J. Gray, Keisuke Sekine, Tobias Gerber, Henry Loeffler-Wirth, Hans Binder, Malgorzata Gac, Sabina Kanton et al. "Multilineage communication regulates human liver bud development from pluripotency." Nature 546, no. 7659 (2017): 533.
 
-[11] Xu, Chen, and Zhengchang Su. "Identification of cell types from single-cell transcriptomes using a novel clustering method." Bioinformatics 31, no. 12 (2015): 1974-1980.
+[11] Satija, Rahul, Jeffrey A. Farrell, David Gennert, Alexander F. Schier, and Aviv Regev. "Spatial reconstruction of single-cell gene expression data." Nature biotechnology 33, no. 5 (2015): 495.
 
-[12] Chung, Woosung, Hye Hyeon Eum, Hae-Ock Lee, Kyung-Min Lee, Han-Byoel Lee, Kyu-Tae Kim, Han Suk Ryu et al. "Single-cell RNA-seq enables comprehensive tumour and immune cell profiling in primary breast cancer." Nature communications 8 (2017): 15081.
+[12] Xu, Chen, and Zhengchang Su. "Identification of cell types from single-cell transcriptomes using a novel clustering method." Bioinformatics 31, no. 12 (2015): 1974-1980.
 
-[13] Butler, Andrew, Paul Hoffman, Peter Smibert, Efthymia Papalexi, and Rahul Satija. "Integrating single-cell transcriptomic data across different conditions, technologies, and species." Nature biotechnology 36, no. 5 (2018): 411.
+[13] Chung, Woosung, Hye Hyeon Eum, Hae-Ock Lee, Kyung-Min Lee, Han-Byoel Lee, Kyu-Tae Kim, Han Suk Ryu et al. "Single-cell RNA-seq enables comprehensive tumour and immune cell profiling in primary breast cancer." Nature communications 8 (2017): 15081.
 
-[14] Zhang, Huanan, Catherine AA Lee, Zhuliu Li, John R. Garbe, Cindy R. Eide, Raphael Petegrosso, Rui Kuang, and Jakub Tolar. "A multitask clustering approach for single-cell RNA-seq analysis in Recessive Dystrophic Epidermolysis Bullosa." PLoS computational biology 14, no. 4 (2018): e1006053.
+[14] Butler, Andrew, Paul Hoffman, Peter Smibert, Efthymia Papalexi, and Rahul Satija. "Integrating single-cell transcriptomic data across different conditions, technologies, and species." Nature biotechnology 36, no. 5 (2018): 411.
+
+[15] Zhang, Huanan, Catherine AA Lee, Zhuliu Li, John R. Garbe, Cindy R. Eide, Raphael Petegrosso, Rui Kuang, and Jakub Tolar. "A multitask clustering approach for single-cell RNA-seq analysis in Recessive Dystrophic Epidermolysis Bullosa." PLoS computational biology 14, no. 4 (2018): e1006053.
